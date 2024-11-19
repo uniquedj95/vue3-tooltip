@@ -1,0 +1,36 @@
+{
+  "name": "@uniquedj95/vtooltip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "Vue",
+    "typescript",
+    "Tooltips"
+  ],
+  "author": {
+    "name": "Daniel Justin",
+    "email": "danieljmuleke@gamil.com",
+    "url": "https://www.github.com/uniquedj95"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "@vue/compiler-sfc": "^3.5.13",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.3.0",
+    "vue": "^3.5.13"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}
